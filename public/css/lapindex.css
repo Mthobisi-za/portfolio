@@ -1,0 +1,54 @@
+@media (min-width:768px) {
+    .pic img {
+        width: 10%;
+    }
+    .bio {
+        display: flex;
+        gap: 5%;
+    }
+    .pic {
+        width: 40%;
+    }
+    .holder {
+        display: flex;
+        width: 100%;
+        gap: 1%;
+    }
+    .tags {
+        width: 40%;
+        text-align: center;
+        background-color: white;
+        border-radius: 30;
+    }
+    .skills {
+        display: flex;
+        row-gap: 10px;
+        column-gap: 2%;
+        flex-wrap: wrap;
+    }
+    .skills p {
+        background-color: white;
+        text-align: center;
+        width: 15%;
+        border-radius: 30px;
+    }
+    .footer {
+        display: flex;
+        gap: 5%;
+    }
+}
+
+@media (max-width:766px) {
+    .skills {
+        flex-wrap: wrap;
+    }
+    .skills p {
+        background-color: white;
+        text-align: center;
+        width: 50%;
+        border-radius: 30px;
+    }
+    .subscribe {
+        width: 80%;
+    }
+}

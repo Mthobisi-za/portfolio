@@ -1,0 +1,82 @@
+<br>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+<link rel="stylesheet" href="/css/lapindex.css">
+<link rel="stylesheet" href="/css/admin.css">
+
+
+
+<nav class="breadcrumb" aria-label="breadcrumbs" style="width:70%;margin: auto;">
+    <ul>
+        <li>
+            <a href="#">
+                <span class="icon is-small">
+                    <i class="fas fa-home" aria-hidden="true"></i>
+                </span>
+                <span>Overview</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="icon is-small">
+                    <i class="fas fa-book" aria-hidden="true"></i>
+                </span>
+                <span>New Project</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="icon is-small">
+                    <i class="fas fa-puzzle-piece" aria-hidden="true"></i>
+                </span>
+                <span>Stats</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+<br> <br>
+
+<!----new project------>
+<div class="newproject">
+    <form action="/newproject" class="formone" method="post">
+        <p class="title" style="text-align:center;font-family: 'Audiowide', sans-serif;">Add New Project</p>
+        <label for="title">Project Title</label> <br>
+        <input type="text" name="title" id="title" class="input" placeholder="Html Css"> <br> <br>
+        <label for="description">Project Description</label> <br>
+        <textarea name="description" id="description" cols="30" rows="10"></textarea> <br> <br>
+        <label for="Skills">Project Skills</label> <br>
+        <textarea name="Skills" id="Skills" cols="30" rows="10"></textarea> <br> <br>
+        <div class="file has-name">
+            <label class="file-label">
+                <input class="file-input" type="file" >
+                <input class="filein" type="hidden" name="resume">
+                <span class="file-cta">
+                    <span class="file-icon">
+                        <i class="fas fa-upload"></i>
+                    </span>
+                    <span class="file-label">
+                        Choose a file…
+                    </span>
+                </span>
+                <span class="file-name">
+                    
+                </span>
+            </label>
+        </div>
+        <br>
+        <button class="button is-success">Submit</button>
+    </form>
+</div>
+<!----new project------>
+<script>
+    var file = document.querySelector('.file-input');
+    var span = document.querySelector('.file-name');
+    file.addEventListener('change', ()=>{
+        var actualFile = file.files[0];
+        span.innerHTML = actualFile.name;
+        var filereader = new FileReader();
+        filereader.onload = (event)=>{
+            document.querySelector('.filein').value = event.target.result;
+        }
+        filereader.readAsDataURL(actualFile);
+    })
+</script>

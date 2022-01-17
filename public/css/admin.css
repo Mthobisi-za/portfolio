@@ -1,0 +1,14 @@
+.newproject {
+    width: 90%;
+    margin: auto;
+}
+
+.formone {
+    width: 100%;
+    height: auto;
+}
+
+.formone .input,
+.formone textarea {
+    width: 70%;
+}

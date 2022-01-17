@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="manifest" href="/images/site.webmanifest">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="/css/menu.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Web Dev Hero || {{title}}</title>
+</head>
+
+<body>
+    <div class="cover-device">
+        <div class="head container device">
+            <br>
+            <div class="logo">
+                <img src="/images/logo.png" alt="">
+            </div>
+            <p class="menu-label none">
+                <i class="fas fa-bars fa-3x"></i>
+                <i class="fas fa-times fa-3x cross"></i>
+            </p>
+            <div class="menu" id="menu">
+                <ul class="menu-list">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Projects</a></li>
+                </ul>
+                <p class="menu-label">Contact Details</p>
+                <ul class="menu-list">
+                    <li><a>Contact Form</a></li>
+                    <li><a>mthobisimtho333@gmail.com</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <br>
+    </div>
+    <div class="cover-laptop" style="background-color: rgb(235, 231, 231);">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand" style="background-color: rgb(235, 231, 231);">
+
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarBasicExample" class="navbar-menu" style="background-color: rgb(235, 231, 231);">
+                <div class="navbar-start" style="background-color: rgb(235, 231, 231);">
+                    <a class="navbar-item">
+                        Home
+                    </a>
+
+                    <a class="navbar-item">
+                        Projects
+                    </a>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                            Contact Details
+                        </a>
+
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item">
+                                Contact Form
+                            </a>
+                            <a class="navbar-item">
+                                mthobisimtho333@gmail.com
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="navbar-end" style="background-color: rgb(235, 231, 231);">
+
+                    <img src="/images/logo.png" width="200px" height="200px"
+                        style="margin-right: 100px; border-radius: 50%;">
+                    <br> <br>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+
+
+    {{{body}}}
+    <form action="/login" method="post" class="forms" style="display: none;">
+        <div class="subscribe"> <br>
+            <div class="div" style="text-align: right; float: right;">
+                <i class="fas fa-times fa-2x close" style="display: block;"></i>
+            </div>
+            
+            <h2 class="subscribe__title">Login Form</h2>
+            <p class="subscribe__copy">Log in to access admin tools</p>
+            <div class="form">
+                <input type="text" name="username" class="form__email" placeholder="Enter your username" /> <br> <br>
+                <input type="password" name="password" class="form__email" placeholder="Enter your password" /><br> <br>
+                <button class="form__button">Send</button>
+            </div>
+    </form>
+
+    </div>
+    <br> <br>
+    <div class="footer" style="width: 100%; background-color: darkgrey;">
+        <div class="lefted">
+            <p class="subtitle" style="font-family: 'Audiowide', sans-serif;">Location</p>
+            <p class="text">
+                51 Sinthumule Street <br>
+                Zone 6 <br>
+                Meadowlands <br>
+                South Africa, Gauteng, Soweto
+            </p>
+            <br>
+        </div>
+        <div class="middle">
+            <p class="subtitle" style="font-family: 'Audiowide', sans-serif;">Social Links</p>
+            <p><a target="_blank" href="https://github.com/Mthobisi-za"><i class="fab fa-github"> Github</i></a></p>
+            <p><a target="_blank" href="https://www.facebook.com/mtho.mthobisi.3910"><i class="fab fa-facebook">
+                        Facebook</i></a></p>
+            <p><a target="_blank" href="www.linkedin.com/in/mthobisi-ngubane-b959211a9"><i class="fab fa-linkedin">
+                        LinkedIn</i></a></p>
+            <p><a target="_blank" href="https://www.youtube.com/channel/UCiGdNVq_40ExICP4q98_iyw/featured"><i
+                        class="fab fa-youtube"> Youtube</i></a></p>
+            <br>
+        </div>
+        <div class="righted">
+            <p class="subtitle" style="font-family: 'Audiowide', sans-serif;">Useful Links</p>
+            <p><a class="a_change" style="text-decoration: none;color: black;">Admin Panel</a></p>
+            <p><a style="text-decoration: none;color: black;" href="">Contact Form</a></p>
+        </div>
+    </div>
+
+</body>
+<script src="/js/menu.js"></script>
+
+
+</html>
