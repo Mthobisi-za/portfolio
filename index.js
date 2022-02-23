@@ -32,7 +32,8 @@ if (connectionstr) {
 const useRoutes = require("./js/routes")(pool);
 ///Get Routes
 app.get('/', useRoutes.home);
-//Post routes
+app.get('/projects', useRoutes.projects)
+    //Post routes
 
 
 /// Admin Panel Get Route

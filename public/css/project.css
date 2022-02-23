@@ -1,0 +1,55 @@
+.pro-holder {
+    width: 90%;
+    margin: auto;
+    background: steelblue;
+    border-radius: 30PX;
+}
+
+.projects-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.title {
+    text-align: center;
+}
+
+.pro {
+    width: 40%;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 30px;
+}
+
+.pro-title {
+    text-align: center;
+}
+
+.img-bg {
+    width: 100%;
+    text-align: center;
+}
+
+.img-bg img {
+    width: 80%;
+    border-radius: 30px;
+}
+
+.skills-wrapper,
+.des-wrapper {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.btn-holder {
+    text-align: right;
+}
+
+.btn {
+    margin-right: 40px;
+    border-radius: 30px;
+}

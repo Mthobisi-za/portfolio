@@ -1,0 +1,27 @@
+<br> <br>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="/css/project.css">
+<div class="pro-holder"> <br>
+    <h1 class="title">PROJECTS</h1>
+    <div class="projects-container">
+        {{#each project}}
+        <div class="pro">
+            <h2 class="pro-title subtitle">{{this.title}}</h2>
+            <div class="img-bg">
+                <img src="{{this.image}}" alt="">
+            </div>
+            <div class="skills-wrapper">
+               <p>{{this.skills}}</p>
+            </div> <br>
+            <div class="des-wrapper">
+               <p>{{this.description}}</p>
+            </div> <br>
+            <div class="btn-holder">
+                   <a href="{{this.link}}" class="btn w3-button w3-white w3-border w3-border-blue">View</a>
+            </div>
+            <br> <br>
+         </div>
+        {{/each}}
+        <br> <br>
+    </div> <br> <br>
+</div>

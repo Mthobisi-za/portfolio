@@ -29,14 +29,18 @@ module.exports = function Routes(pool) {
 
     async function newProject(req, res) {
         var obj = req.body;
-        console.log(obj);
         await useDb.newproject(obj);
         res.redirect('/');
+    }
+    async function projects(req, res) {
+        var pro = await useDb.getProjects();
+        res.render('projects', { project: pro })
     }
     return {
         home,
         logInPost,
         admin,
-        newProject
+        newProject,
+        projects
     }
 }
