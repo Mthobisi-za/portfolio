@@ -5,8 +5,13 @@ const app = express();
 const { Pool } = require("pg");
 require('dotenv').config()
 app.use(express.static("public"));
-app.use(body.urlencoded({ extended: false }));
-app.use(body.json());
+app.use(body.urlencoded({
+    extended: true,
+    limit: '50mb',
+    parameterLimit: 100000,
+    extended: true
+}));
+app.use(body.json({ limit: '50mb' }));
 app.engine(
     "handlebars",
     engine({ layoutsDir: "views/layouts", defaultLayout: "main" })
